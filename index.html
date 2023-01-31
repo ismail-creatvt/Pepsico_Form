@@ -21,7 +21,7 @@
                 <label class="input_field_label" for="flavor_oil_percent">Flavor Oil %</label>
                 <div class="percent_range">
                     <span class="start">0</span>
-                    <input type="range" name="flavor_oil_percent" id="flavor_oil_percent">
+                    <input type="range" name="flavor_oil_percent" id="flavor_oil_percent" min="0" max="1" step="0.05">
                     <span class="end">1</span>
                 </div>
                 <p>150</p>
@@ -30,9 +30,9 @@
             <div class="input_field_border" id="gpu_box">
                 <label class="input_field_label" for="gpu_range">GPU</label>
                 <div class="percent_range">
-                    <span class="start">0</span>
-                    <input type="range" name="gpu_range" id="gpu_range">
-                    <span class="end">1</span>
+                    <span class="start">0.5</span>
+                    <input type="range" name="gpu_range" id="gpu_range" min="0" max="8" step="1">
+                    <span class="end">7</span>
                 </div>
                 <p>150</p>
             </div>
