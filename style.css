@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+:root {
+    --color-accent: #007D58;
+    --color-accent-light: #007d5745;
+    --color-background: #D7ECFF;
+    --color-divider: #0000001f;
+    --color-card-bg: #fff;
+    --color-primary: #007DF1;
+    --color-neutral: #0000001f;
+}
+
+
+body{
+    background-color: var(--color-background);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-family: 'DM Sans', sans-serif;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Sans';
+}
+
+.card {
+    background-color: var(--color-card-bg);
+    padding: 24px;
+    margin: 2rem;
+    width: 40%;
+    min-width: 480px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divider {
+    margin: 36px;
+    width: 50%;
+    height: 1px;
+    background-color: var(--color-divider);
+}
+
+.card > div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 32px;
+}
+
+.title {
+    margin: 0;
+}
+
+.input_field_border {
+    border-radius: 8px;
+    border: 1px solid var(--color-accent);
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex: 0 0 calc(50% - 10px);
+}
+
+.input_field_border:focus-within {
+    border: 2px solid var(--color-accent);
+}
+
+#flavor_oil_name_box {
+    flex: 0 0 100%;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.input_field_label {
+    position: absolute;
+    top: -0.8rem;
+    left: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: var(--color-card-bg);
+    padding: 0px 8px;
+}
+
+#flavor_oil_percent_box p, #gpu_box p{
+    padding: 8px;
+    border-radius: 8px;
+    margin-right: 20px;
+    background-color: var(--color-accent-light);
+}
+.percent_range {
+    margin: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.percent_range input {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.percent_range span {
+    position: absolute;
+    font-size: 0.9rem;
+    bottom:-10px;
+}
+
+.percent_range .end {
+    right:4px;
+}
+
+.input_field {
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 1.1rem 1.5rem 1rem 1.2rem;
+}
+
+.input_field:active, .input_field:focus{
+    outline: none;
+}
+
+.chips_box{
+    margin: 16px;
+    column-gap: 10px !important;
+    row-gap: 25px !important;
+}
+
+.chips_box > label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.chip input{
+    display: none;
+}
+.chip label {   
+    padding: 10px 16px;
+    border-radius: 20px;
+    background-color: var(--color-neutral);
+}
+
+.chip input:checked+label {
+    background-color: var(--color-accent);
+    color: #fff;
+}
+
+.csd_hotfill {
+    padding: 40px;
+}
+
+.submit {
+    padding: 24px 24px 0px 24px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submit button {
+    border-radius: 8px;
+    background-color: var(--color-primary);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.27);
+}
+
+.submit button:active {
+    transform: scale(1.2, 1.2);
+    transition: transform 1s ease-in-out;
+    
+}
