@@ -11,6 +11,8 @@
     <div class="card">
         <h3 class="title">Form</h3>
         <span class="divider"></span>
+
+
         <div class="flavor_oil">
             <div class="input_field_border" id="flavor_oil_name_box">
                 <label class="input_field_label" for="flavor_oil_name">Flavor Oil Name</label>
@@ -18,23 +20,23 @@
             </div>
             
             <div class="input_field_border" id="flavor_oil_percent_box">
-                <label class="input_field_label" for="flavor_oil_percent">Flavor Oil %</label>
+                <label class="input_field_label" id="flavor_oil_percent_label" for="flavor_oil_percent">Flavor Oil %</label>
                 <div class="percent_range">
                     <span class="start">0</span>
                     <input type="range" name="flavor_oil_percent" id="flavor_oil_percent" min="0" max="1" step="0.05">
                     <span class="end">1</span>
                 </div>
-                <p>150</p>
+                <p id="flavor_oil_percent_value">150</p>
             </div>
             
             <div class="input_field_border" id="gpu_box">
-                <label class="input_field_label" for="gpu_range">GPU</label>
+                <label class="input_field_label" id="gpu_range_label" for="gpu_range">GPU</label>
                 <div class="percent_range">
                     <span class="start">0.5</span>
                     <input type="range" name="gpu_range" id="gpu_range" min="0" max="8" step="1">
                     <span class="end">7</span>
                 </div>
-                <p>150</p>
+                <p id="gpu_value">0</p>
             </div>
             
             <div class="input_field_border" id="flavor_oil_density_box">
@@ -42,7 +44,12 @@
                 <input type="text" class="input_field" name="flavor_oil_density" id="flavor_oil_density"/>
             </div>
         </div>
+
+
+
         <span class="divider"></span>
+
+
 
         <div class="interfacial">
             <div class="input_field_border" id="interfacial_water_box">
@@ -55,6 +62,9 @@
                 <input type="text" class="input_field" name="interfacial_starch" id="interfacial_starch"/>
             </div>
         </div>
+
+
+
         <span class="divider"></span>
         
         <div class="target">
@@ -73,11 +83,14 @@
                 <input type="text" class="input_field" name="target_turbidity" id="target_turbidity"/>
             </div>
         </div>
+
+
+
         <span class="divider"></span>
         <div class="chips_box" id="specific-emulsifier)box">
             <label>Specific Emulsifier in Mind?</label>
             <div class="chip">
-                <input type="radio" name="specific-emulsifier" value="gum_arabic" id="gum_arabic"/>
+                <input type="radio" name="specific-emulsifier" value="gum_arabic" checked id="gum_arabic"/>
                 <label for="gum_arabic">Gum Arabic</label>
             </div>
             <div class="chip">
@@ -93,7 +106,7 @@
         <div class="chips_box" id="specific-weighting_box">
             <label>Specific Weighting agent in Mind?</label>
             <div class="chip">
-                <input type="radio" name="specific-weighting" value="ester_gum" id="ester_gum"/>
+                <input type="radio" name="specific-weighting" value="ester_gum" checked id="ester_gum"/>
                 <label for="ester_gum">Ester Gum</label>
             </div>
             <div class="chip">
@@ -127,7 +140,7 @@
        
         <div class="csd_hotfill">
             <div class="chip">
-                <input type="radio" name="csd_hotfill" value="csd" id="csd"/>
+                <input type="radio" name="csd_hotfill" value="csd" checked id="csd"/>
                 <label for="csd">CSD</label>
             </div>
             <div class="chip">
@@ -140,5 +153,7 @@
             <button type="submit">Submit</button>
         </div>
     </div>
+    <script src="index.js"></script>
+
 </body>
 </html>

@@ -5,6 +5,7 @@
     --color-accent-light: #007d5745;
     --color-background: #D7ECFF;
     --color-divider: #0000001f;
+    --color-grey:rgba(0, 0, 0, 0.262);
     --color-card-bg: #fff;
     --color-primary: #007DF1;
     --color-neutral: #0000001f;
@@ -31,6 +32,7 @@ body{
     min-width: 600px;
     border-radius: 24px;
     display: flex;
+    box-shadow: 0 0 30px #00407c1d;
     flex-direction: column;
     align-items: center;
 }
@@ -65,7 +67,7 @@ body{
 }
 
 .input_field_border:focus-within {
-    border: 2px solid var(--color-accent);
+    outline: 2px solid var(--color-accent);
 }
 
 #flavor_oil_name_box {
@@ -85,13 +87,16 @@ body{
 }
 
 #flavor_oil_percent_box p, #gpu_box p{
-    padding: 8px;
+    padding: 10px 6px;
     border-radius: 8px;
-    margin-right: 20px;
+    margin-right: 16px;
+    width: 50px;
+    text-align: center;
     background-color: var(--color-accent-light);
 }
+
 .percent_range {
-    margin: 20px;
+    margin: 20px 10px 20px 20px;
     width: 100%;
     position: relative;
 }
