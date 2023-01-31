@@ -192,6 +192,7 @@ input[type="range"] {
         width:100%;
         margin: 0;
         min-width: 0px !important;
+        box-shadow: none;
     }
     body {
         background-color: var(--color-card-bg);
